@@ -1,33 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hanaasagi</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/pray.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.css.network/css?family=Alegreya">
-  <link rel="stylesheet" type="text/css" href="https://fonts.css.network/css?family=Monda">
-</head>
-<body>
-  <div id="loader">
-    <div id="loader_left"></div>
-    <div id="loader_right"></div>
-    <div id="loader_content">少女祈祷中...</div>
-    <div id="loader_shining">
-      <div id="loader_shining_inner"></div>
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Hanaasagi</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hanaasagi 紺野さゆり"/>
+    <meta name="description" content="growth hacker"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pray.css">
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script>
+      InSwitch = 0;
+      'addEventListener' in window && (window.addEventListener('load', function () {
+        document.body.className = document.body.className.replace(/\bis-loading\b/, '')
+      }), document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    </script>
+    <style type="text/css">
+      body{
+        height: 100%;
+        background-color: #FFF;
+        background-image: url(assets/images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: bottom center;
+        background-attachment: fixed
+      }
+    </style>
+  </head>
+  <body class="is-loading">
+    <div id="loader">
+      <div id="loader_left"></div>
+      <div id="loader_right"></div>
+      <div id="loader_content">少女祈祷中...</div>
+      <div id="loader_shining">
+        <div id="loader_shining_inner"></div>
+      </div>
+      <div id="loader_content2">Loading...</div>
     </div>
-    <div id="loader_content2">Loading...</div>
-  </div>
-  <header><h1>Hanaasagi<h1></header>
-  <div class="desc">
-    Learning Forever
-  </div>
-  <div class="link">
-    <a href="https://blog.dreamfever.me">Blog</a>&nbsp;&nbsp;
-    <a href="https://github.com/Hanaasagi">Github</a>&nbsp;&nbsp;
-    <a href="https://twitter.com/Hanaasagi3">Twitter</a>
-  </div>
-  <audio autoplay="autoplay"><source src="/static/music/onj.mp3" type="audio/mpeg"></audio>  
-</body>
+    <div id="wrapper">
+      <section id="main">
+        <div id="contain">
+          <header>
+            <span class="avatar">
+              <img src="assets/images/avatar.png" height="200" width="200" alt="" title="转啊转..转啊转.._(:3 」∠)_">
+            </span>
+            <h1>紺野さゆり@Hanaasagi</h1>
+            <p>A Young Programer Who Using Python, But Fall In Love With Haskell.</p>
+          </header>
+          <ul class="actions">
+            <li>
+              <a href="https://blog.dreamfever.me" class="button">BLOG</a>
+            </li>
+            <li>
+              <a href="https://github.com/Hanaasagi" class="button">Github</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer id="footer">
+        <ul class="copyright">
+          <li>&copy; Hanaasagi</li>
+          <li>Theme: <a href="https://html5up.net">HTML5 UP</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <audio autoplay="autoplay"><source src="assets/music/onj.mp3" type="audio/mpeg"></audio>
+  </body>
 </html>
